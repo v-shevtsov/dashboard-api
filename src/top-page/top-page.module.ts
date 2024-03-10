@@ -10,5 +10,6 @@ import { TopPageService } from './top-page.service';
     MongooseModule.forFeature([{ name: TopPage.name, schema: TopPageSchema }]),
   ],
   providers: [TopPageService],
+  exports: [TopPageService],
 })
 export class TopPageModule {}
